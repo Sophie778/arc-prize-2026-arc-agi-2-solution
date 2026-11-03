@@ -1,0 +1,26 @@
+{
+  "origin": "dev/qwen38_s3",
+  "unchanged_source_sha256": {
+    "runner.py": "d6d87bb91b284ca939c15530b70619dda935269f82c21d5a034b7ee0ba8a5755",
+    "measurement.py": "413d41046cfb93fd65febf5c7ddd0983a6aa1431c489cd8a962529c4bf337808",
+    "supervisor.py": "4a50b575cd52c8d4f0412d94d35a03ab06a50e930d9db6e712b9540de135f1cc",
+    "core.py": "c0cf6043b8924e53df8b849b505b16acd942b6e825b29b90a0aad82fb1c4210b",
+    "runtime.py": "d8e91fc436df64d167c8637a6e9ff6c85205327ae2b1ae7c958c660517f38e0b",
+    "telemetry.py": "77fd44fd81e0a6570c9e7c015cb67debaff79bac6c3ea8bc31a6cb920f7a9412",
+    "cpu_fixture.py": "310ed7f8e40c66a89a737bb2546734bb398f2bab91b8420e9f0578d1ee1365ee",
+    "tiny_engine.py": "74b265e423ef0b995315674641eb497fdec9bbc7d9905dd2480c5ec594d119c3",
+    "system_prompt.txt": "065e42f724bcfe3a735ded38d92b34a6a942604e653a0584cc08b1de9bdf70cc",
+    "chat_template.jinja": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+    "LICENSE": "ef082ee81091717d8e75069fcfe6324cb0c5bf24436933c9112bb7e479be1672",
+    "prepare_original.py": "a9894cc25e25478cbf5e2d54fc3c671cf5a1b39d7e95d06b718d7a4ca76f9877"
+  },
+  "publication_changes": {
+    "prepare.py": "New portable selection and private payload builder; no embedded competition data or IDs.",
+    "kernel/kernel.py": "Byte-identical to supervisor.py, empty payload template, not historical data-bearing kernel.",
+    "README_original.md": "Historical README with temporary environment path replaced.",
+    "aggregate.py": "New whitelist export of token, completion, closure, timing and speed metrics."
+  },
+  "source_aliases": {
+    "prepare_original.py": "prepare.py"
+  }
+}

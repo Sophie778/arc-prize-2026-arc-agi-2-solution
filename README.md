@@ -10,3 +10,11 @@ Two final submissions for the Kaggle competition "ARC Prize 2026 - ARC-AGI-2":
 See `WRITEUP.md` for the method, measurements and limitations, and each bundle's `README.md`, `LICENSE` and `NOTICE` for reproduction, licensing and third-party attribution.
 
 Our own code is available under MIT-0 or CC-BY-4.0, at your option. Third-party code keeps its original license and notices. Competition data, model weights and notebook outputs are not included.
+
+## Paper measurement materials
+
+`measurement/` contains the data-free S3 measurement code and anonymous token,
+completion, closure, timing and throughput metrics underlying Figure 2. Its
+README documents the thought/answer caps, forced continuations, exact workload
+selection algorithm, excluded private inputs, and reproduction limits. These
+materials are separate from the final submission configurations above.
