@@ -1,0 +1,150 @@
+{
+  "scope": "Offline revision using directly read review1.md and license_check2.md plus explicit user decision on 2026-11-02. No new network verification.",
+  "publication_decision": "DECISIONS.md:1193-1195 and docs/publication_decision_20261031.md",
+  "nvarc_notebook": {
+    "url": "https://www.kaggle.com/code/yiheng/reproduce-nvarc-2025-results",
+    "author": "yiheng; NVARC authors Ivan Sorokin and Jean-Francois Puget",
+    "version": 1,
+    "source_json_sha256": "39197172212c33e87bf5f70e614f8eae345d79d89a96c761045d57ce26a6ee86",
+    "license": "Apache-2.0（Kaggle スタッフの公開 Notebook 一般方針に基づく扱い；個別 License 欄は未確認）",
+    "evidence": [
+      "reports/public_baseline_intake_exp003_20260912.md:9",
+      "work/rule_audit/astra2.log:6633-6648",
+      "work/publish/license_check2.md",
+      "https://www.kaggle.com/discussions/competition-hosting/363731"
+    ],
+    "warning": "Individual License field unverified. Historical parent-version lineage remains incomplete as a provenance limitation, not an unresolved license hold under the instructed public-notebook policy. GitHub has no confirmed license and is not the grant relied on."
+  },
+  "nvarc_repository": {
+    "url": "https://github.com/1ytic/NVARC",
+    "revision": "846d0198efa752534594e321fc3289fc0a06c657",
+    "license": "未確定; no LICENSE/COPYING/NOTICE at recorded revision",
+    "evidence": "work/rule_audit/astra2.log:6638-6648"
+  },
+  "nvarc_model": {
+    "url": "https://www.kaggle.com/models/sorokin/qwen3_4b_grids15_sft139/Transformers/bfloat16/1",
+    "author": "sorokin (Ivan Sorokin), NVARC; upstream Qwen",
+    "version": 1,
+    "instance_id": 472720,
+    "version_id": 627758,
+    "license": "Apache-2.0 (model instance distribution label)",
+    "weight_sha256": null,
+    "evidence": "work/astra_public_sweep_models.json:17-25",
+    "note": "Weight bytes not locally rehashed in this task. Tokenizer member hashes are separately recorded."
+  },
+  "qwen_model": {
+    "url": "https://www.kaggle.com/models/mikedan7/qwen3-8-27b-fp8-official/pytorch/hf-fp8/1",
+    "author": "Qwen; Kaggle mirror mikedan7",
+    "version": 1,
+    "official_url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/tree/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "license": "Apache-2.0 (Kaggle Model hf-fp8 version 1 License field confirmed in review1.md; official distribution also Apache-2.0)",
+    "evidence": [
+      "work/rule_audit/astra2.log:6637",
+      "dev/qwen38/sources/official_tree.json",
+      "dev/qwen38/README.md:39-56",
+      "work/publish/review1.md"
+    ],
+    "note": "Official tree identifiers are recorded identities, not a fresh comparison of all mirror bytes."
+  },
+  "patch_notebook": {
+    "url": "https://www.kaggle.com/code/sorokin/pip-install-unsloth-flash-patch",
+    "author": "sorokin (Ivan Sorokin)",
+    "version": null,
+    "sha256": null,
+    "license": "Apache-2.0（Kaggle スタッフの公開 Notebook 一般方針に基づく扱い；個別 License 欄は未確認）",
+    "evidence": [
+      "work/publish/license_check2.md",
+      "https://www.kaggle.com/discussions/competition-hosting/363731"
+    ],
+    "note": "Notebook code license treated as Apache-2.0; exact attached output version/hash still unknown. Bundled packages retain their own licenses."
+  },
+  "qwen_runtime": {
+    "url": "https://www.kaggle.com/code/sophie555/arc26-qwen38-runtime-cp311",
+    "author": "Daiki / sophie555 (builder); individual package authors",
+    "version": null,
+    "license": "Own builder MIT-0 OR CC-BY-4.0; wheels keep individual upstream licenses (exact wheel licenses 未確定)",
+    "evidence": [
+      "dev/qwen38/README.md",
+      "work/qwen38d_runtime_v3/qwen38-vllm-runtime/runtime_manifest.json"
+    ],
+    "upstream_builder": "https://www.kaggle.com/code/phamtruongdat/qwen-runtime-preparation",
+    "upstream_builder_source_sha256": "151a85fa22167d6c51b0fd32b446813c33fa62d34bf0a3736a2372b90911a587",
+    "upstream_builder_license": "MIT-0 explicitly stated in saved primary notebook dev/qwen38/sources/qwen-runtime-preparation.json, markdown cell 0",
+    "note": "Metadata does not pin kernel output versions. Local v2/v3 runtime manifest is a reference, not proof of the exact submission mount."
+  },
+  "prompt": {
+    "url": "https://github.com/arcprize/arc-agi-benchmarking/tree/9e2828fb5bd3ab43f6b9fc545595b82b67473b93",
+    "author": "ARC Prize Foundation",
+    "revision": "9e2828fb5bd3ab43f6b9fc545595b82b67473b93",
+    "license": "MIT",
+    "evidence": [
+      "dev/qwen38/provenance.json",
+      "dev/qwen38/sources/harness_revision.txt",
+      "dev/qwen38/sources/system_prompt.txt",
+      "work/publish/review1.md"
+    ],
+    "copyright": "Copyright (c) 2025 ARC Prize Foundation",
+    "license_url": "https://raw.githubusercontent.com/arcprize/arc-agi-benchmarking/9e2828fb5bd3ab43f6b9fc545595b82b67473b93/LICENSE.md",
+    "license_copy": "licenses/MIT-ARC-Prize-Foundation.txt"
+  },
+  "chat_template": {
+    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8/tree/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a/chat_template.jinja",
+    "author": "Qwen",
+    "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+    "license": "Apache-2.0 (official model distribution)",
+    "git_blob_sha1": "c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+    "evidence": "dev/qwen38/sources/official_tree.json: chat_template.jinja; actual byte/git-blob comparison passed"
+  },
+  "patch_packages_reference_only": [
+    {
+      "name": "unsloth",
+      "version": "2025.9.7",
+      "license": "Apache-2.0",
+      "url": "https://pypi.org/project/unsloth/2025.9.7/"
+    },
+    {
+      "name": "unsloth-zoo",
+      "version": "2025.9.9",
+      "license": "LGPL-3.0-or-later",
+      "url": "https://pypi.org/project/unsloth-zoo/2025.9.9/"
+    },
+    {
+      "name": "flash-attention",
+      "version": "2.8.2 (license reference)",
+      "license": "BSD-3-Clause",
+      "url": "https://raw.githubusercontent.com/Dao-AILab/flash-attention/v2.8.2/LICENSE"
+    }
+  ],
+  "patch_packages_note": "Saved primary verification is reported in work/rule_audit/astra2.log:6649. This reference notebook has not been proven identical to the final attached environment; exact versions/hashes remain unconfirmed.",
+  "osaid": "未確認 for both model training systems; a permissive weight license alone does not establish OSAID conformity.",
+  "saved_evidence_sha256": {
+    "docs/publication_decision_20261031.md": "4ecf28463eef8b2029add8173082f662dd8906fac95a7cc1f35855ad1657b0c5",
+    "docs/rule_audit_20261030.md": "e33b859bc9f4f941402f878a283923e2281e692a55bc05de386900a08c132b70",
+    "work/rule_audit/astra2.log": "6ac32d6c0c1c98b7657c3ae6e587a77216af56a58a124a7ee686ee418f4094d0",
+    "reports/public_baseline_intake_exp003_20260912.md": "a38230ae541a8d8b4f8ddf88ed95d5dca0c3ce10838f235a2286002f6f2fef00",
+    "work/astra_public_sweep_models.json": "1686acb40ab8f066d3d3da43f3ca31b7725a09b3ce1e3e796a412afaf156a406",
+    "dev/qwen38/sources/official_tree.json": "a86556757c6f659bd7178cd8a1dfc2ff66051f9bca6669af2257cb85fcfeed81",
+    "dev/qwen38/sources/qwen-runtime-preparation.json": "151a85fa22167d6c51b0fd32b446813c33fa62d34bf0a3736a2372b90911a587",
+    "work/publish/review1.md": "f4f7beb0130d4f9452d089c4c84fa26cb01d6574e111390fdbba79ed7e31f287",
+    "work/publish/license_check2.md": "3e98533e2256fa7a4757ec1c585a8ecb7a98d554313816cee5c61512a8be00aa"
+  },
+  "runtime_reference_manifest_sha256": "c1c04d8b9c1f2cab7b0fb420a085c021697191c72b2a49f0be12d5ea473296dd",
+  "public_notebook_policy": {
+    "url": "https://www.kaggle.com/discussions/competition-hosting/363731",
+    "speaker": "Bovard Doerschuk-Tiberi (Kaggle staff)",
+    "statement": "All public notebooks are released under the Apache 2.0 license",
+    "basis": "work/publish/license_check2.md; user instruction to apply this policy to yiheng and sorokin",
+    "individual_license_fields_verified": false
+  },
+  "apache_redistribution": {
+    "license_copy": "licenses/Apache-2.0.txt",
+    "attribution": "NOTICE and unchanged upstream source comments",
+    "modified_files": {
+      "arc_decoder.py": "Modified by Daiki / sophie555: skip unreadable or incomplete compressed candidate files rather than aborting collection.",
+      "arc_solver.py": "Modified by Daiki / sophie555: resolve Kaggle competition/model mount paths at runtime; record task start/end; use one color permutation per eight spatial generation views with helper batching and cached prompt tokens; rescore with four views instead of eight.",
+      "starter.py": "Modified by Daiki / sophie555: resolve Kaggle competition mounts at runtime; bound multiprocessing waits by the deadline, report worker liveness, and terminate/kill stuck workers to reach submission saving."
+    },
+    "notice_location": "NOTICE carries file-specific modification notices for expanded src and embedded notebook payload, preserving exact submission bytes per user instruction."
+  }
+}

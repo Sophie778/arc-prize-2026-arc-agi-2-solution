@@ -1,0 +1,101 @@
+# NOTICE — exp095 publication draft
+
+This directory contains the exact local submitted kernel and its expanded payload.
+It is a review draft, not an approved public release. `PUBLICATION_HOLD.json`
+lists the remaining publication holds. The MIT-0 OR CC-BY-4.0 grant covers only our own
+contributions. It does not relicense any of the following third-party material.
+
+## Included third-party material
+
+- `src/arc_loader.py`, `arc_decoder.py`, `arc_solver.py`, `starter.py`:
+  yiheng's reproduction of NVARC, by Ivan Sorokin and Jean-Francois Puget,
+  with our changes in the decoder, solver and starter; arc_loader.py is unchanged. https://www.kaggle.com/code/yiheng/reproduce-nvarc-2025-results; saved notebook v1 source JSON SHA-256
+  `39197172212c33e87bf5f70e614f8eae345d79d89a96c761045d57ce26a6ee86`. License: Apache-2.0 under Kaggle staff's public-notebook policy
+  (see policy below). Individual License field: **not verified**.
+  Historical parent version lineage is incomplete. GitHub NVARC commit
+  `846d0198efa752534594e321fc3289fc0a06c657` has no recorded LICENSE;
+  it does not establish permission for this copy. Existing source comments retained.
+- `src/system_prompt.txt`: ARC Prize Foundation,
+  https://github.com/arcprize/arc-agi-benchmarking/tree/9e2828fb5bd3ab43f6b9fc545595b82b67473b93. MIT.
+  Copyright (c) 2025 ARC Prize Foundation. Full permission and warranty text:
+  `licenses/MIT-ARC-Prize-Foundation.txt`, applying also to the embedded kernel copy.
+- `src/chat_template.jinja`: Qwen, https://huggingface.co/Qwen/Qwen3.8-27B-FP8/tree/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a; Apache-2.0.
+  Its byte size and Git blob identity match the saved official tree.
+- Five tokenizer files under `src/nvarc_tokenizer/` (excluding our generated
+  `provenance.json`): NVARC / sorokin, upstream Qwen, https://www.kaggle.com/models/sorokin/qwen3_4b_grids15_sft139/Transformers/bfloat16/1; version 1,
+  distribution license Apache-2.0. Per-file SHA-256 values are in provenance.json.
+- `src/runtime.py` adapts offline setup procedures from phamtruongdat,
+  https://www.kaggle.com/code/phamtruongdat/qwen-runtime-preparation.
+  Saved source explicitly grants MIT-0; source JSON SHA-256
+  `151a85fa22167d6c51b0fd32b446813c33fa62d34bf0a3736a2372b90911a587`.
+  Upstream portions remain MIT-0; our changes have the dual license.
+
+`notebook/kernel.py` embeds all of the above, so the same conditions apply to
+its encoded payload. A first-party header is not permission for the entire kernel.
+`src/manifest.json` and `src/nvarc_tokenizer/provenance.json` are generated hash
+records, not independent upstream licenses.
+
+## External dependencies — referenced, not redistributed
+
+- https://www.kaggle.com/models/sorokin/qwen3_4b_grids15_sft139/Transformers/bfloat16/1: sorokin / NVARC, v1 (version ID 627758), Apache-2.0
+  distribution label verified by saved Kaggle primary API response.
+- https://www.kaggle.com/models/mikedan7/qwen3-8-27b-fp8-official/pytorch/hf-fp8/1: mikedan7 mirror of Qwen, v1. Official revision
+  `017b9c7af6b5689d5dd426a76e0bc077eb5ca20a` has Apache-2.0; the Kaggle Model hf-fp8 version 1 License field
+  is also Apache-2.0, as confirmed in review1.md. Official file identities are in references/.
+- https://www.kaggle.com/code/sorokin/pip-install-unsloth-flash-patch: sorokin. Notebook code is treated as Apache-2.0 under the
+  public-notebook policy; its individual License field is **not verified**.
+  Exact attached output version/hash remain unconfirmed. The saved reference environment
+  uses Unsloth 2025.9.7 (Apache-2.0), Unsloth Zoo 2025.9.9 (LGPL-3.0-or-later)
+  and Flash Attention (BSD-3-Clause; audit license reference v2.8.2).
+  Those package licenses are separate from the notebook code's Apache-2.0
+  treatment and do not prove the exact versions in the attached output.
+- https://www.kaggle.com/code/sophie555/arc26-qwen38-runtime-cp311: our CPU runtime builder with 180 third-party wheels.
+  `references/runtime_manifest.json` and `requirements.lock` record a local
+  v2/v3 output reference. Metadata did not pin an output version, so this is
+  not proof of the exact submission mount. Individual wheel licenses remain
+  unverified; packages retain their respective licenses. No wheel is included.
+  In particular, the whole environment must not be labeled MIT-0 or Apache-2.0.
+- Runtime/image packages not present in the wheel manifest (including the
+  NVARC environment) retain upstream rights; their exact component manifest
+  is not available in this offline review.
+- Competition input: ARC Prize 2026 – ARC-AGI-2, Kaggle. Competition data,
+  evaluation answers, task dumps and prediction caches are excluded. Obtain
+  input through the official competition after accepting its Rules.
+
+The saved primary references and their verification limits appear in
+`evidence/license_evidence.json`; file-level attribution appears in provenance.json.
+A copy of the complete Apache-2.0 terms is in licenses/Apache-2.0.txt.
+The MIT permission notice is in licenses/MIT-ARC-Prize-Foundation.txt. The broad OSAID requirements
+remain separately unconfirmed for the upstream training systems.
+
+## Our contributions
+
+Source modules with our primary authorship: `collect_worker.py`, `core.py`, `cpu_validation.py`, `cpu_worker.py`, `generation_views.py`, `manifest.json`, `nvarc_cpu_validation.py`, `nvarc_tokenizer/provenance.json`, `policy.py`, `qwen_config.py`, `runner.py`, `runtime.py`, `runtime_probe.py`, `supervisor.py`, `task_trace.py`, `tiny_engine.py`.
+Our original contributions, entry.py, rebuild.py and documentation are available
+under MIT-0 OR CC-BY-4.0. Attribution if using CC-BY-4.0:
+Daiki (Kaggle: sophie555), ARC-AGI-2 2026 solution, exp095; indicate changes
+and link to https://creativecommons.org/licenses/by/4.0/.
+
+## Public-notebook license basis and preservation of attribution
+
+Kaggle staff Bovard Doerschuk-Tiberi: "All public notebooks are released under
+the Apache 2.0 license" (line wrap only).
+https://www.kaggle.com/discussions/competition-hosting/363731
+Based on license_check2.md and the publication owner's decision, the yiheng and
+sorokin public notebook code is treated as Apache-2.0. Neither notebook's individual
+License field was verified. No license grant for the GitHub NVARC repository as a
+whole is asserted. The saved upstream source comments and author attributions are
+preserved, with author/source identifiers above and complete Apache terms attached.
+No separate upstream NOTICE was present in the saved four source cells; this
+NOTICE retains their available attribution without inventing a copyright year.
+
+## File-specific modification notices (Apache-2.0 section 4)
+
+These prominent notices accompany each named file, including its embedded copy
+in notebook/kernel.py. Per the owner's instruction, they are recorded here so the
+expanded source and the encoded submitted kernel retain byte identity.
+
+- `src/arc_decoder.py`: Modified by Daiki / sophie555: skip unreadable or incomplete compressed candidate files rather than aborting collection.
+- `src/arc_solver.py`: Modified by Daiki / sophie555: resolve Kaggle competition/model mount paths at runtime; record task start/end; use one color permutation per eight spatial generation views with helper batching and cached prompt tokens; rescore with four views instead of eight.
+- `src/starter.py`: Modified by Daiki / sophie555: resolve Kaggle competition mounts at runtime; bound multiprocessing waits by the deadline, report worker liveness, and terminate/kill stuck workers to reach submission saving.
+- `src/arc_loader.py`: unchanged from the saved yiheng notebook v1.

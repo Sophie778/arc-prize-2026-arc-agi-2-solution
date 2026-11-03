@@ -1,0 +1,25 @@
+{
+  "id": "sophie555/arc2-exp096-qwen-main",
+  "title": "arc2-exp096-qwen-main",
+  "code_file": "kernel.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "kernel_sources": [
+    "sorokin/pip-install-unsloth-flash-patch",
+    "sophie555/arc26-qwen38-runtime-cp311"
+  ],
+  "competition_sources": [
+    "arc-prize-2026-arc-agi-2"
+  ],
+  "model_sources": [
+    "sorokin/qwen3_4b_grids15_sft139/Transformers/bfloat16/1",
+    "mikedan7/qwen3-8-27b-fp8-official/pytorch/hf-fp8/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:320043e14c68293f1c946585b9257123385205a58af4b94b17d31868cae4e868",
+  "machine_shape": "NvidiaL4"
+}

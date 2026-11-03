@@ -1,0 +1,41 @@
+DRAFT: first-party contributions are offered under either license, at your option:
+SPDX-License-Identifier: MIT-0 OR CC-BY-4.0
+
+Scope: original contributions by Daiki (Kaggle: sophie555), including preparation
+scripts and documentation. See provenance.json for file-level attribution.
+This grant does not replace third-party licenses or grant rights in third-party
+code. Remaining publication holds are listed in PUBLICATION_HOLD.json.
+Third-party terms include Apache-2.0 and the ARC Prize Foundation MIT license
+in licenses/; file-specific attribution and modification notices are in NOTICE.
+The original upstream notices in sources have been retained verbatim.
+
+Option 1 — MIT-0
+
+MIT No Attribution (MIT-0)
+
+Copyright 2026 Daiki (Kaggle: sophie555)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the
+Software without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Option 2 — Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+The same first-party contributions are also licensed under Creative Commons
+Attribution 4.0 International. The legal terms are incorporated here:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+If choosing CC-BY-4.0, credit "Daiki (Kaggle: sophie555), ARC-AGI-2 2026 solution",
+link to this license, and indicate changes. No extra restrictions are imposed.
+The fixed public repository URL will be supplied when the release is approved.
+The MIT-0 alternative does not require attribution.
