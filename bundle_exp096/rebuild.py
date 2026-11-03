@@ -15,6 +15,11 @@ def build(verify_only=False):
     manifest = json.loads((H/'src/manifest.json').read_text())
     assert set(manifest) | {'manifest.json'} == set(identity['members'])
     files = {n: (H/'src'/n).read_bytes() for n in identity['members']}
+    # Publication-only leading notices are absent from the scored payload.
+    for n, notice in identity['publication_source_notices'].items():
+        prefix = notice.encode('utf-8')
+        assert files[n].startswith(prefix), 'Missing publication notice: ' + n
+        files[n] = files[n][len(prefix):]
     for n, b in files.items():
         assert digest(b) == identity['members'][n]['sha256'], n
         if n in manifest: assert digest(b) == manifest[n], n

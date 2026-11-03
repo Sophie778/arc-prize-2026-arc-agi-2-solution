@@ -374,15 +374,23 @@
   },
   "runtime_reference_sha256": "c1c04d8b9c1f2cab7b0fb420a085c021697191c72b2a49f0be12d5ea473296dd",
   "attachment_versions_confirmed": false,
-  "final_selection_confirmed": false,
+  "final_selection_confirmed": true,
   "submission_linkage": {
     "candidate_refs": [
       57623188,
       57787093
     ],
-    "selected_submission_ref": null,
-    "notebook_version": null,
+    "selected_submission_ref": 57787093,
+    "notebook_version": 1,
     "scored_kernel_sha256": null,
-    "note": "Intentionally blank until final two are selected. Candidate refs are not asserted mappings to this snapshot."
-  }
+    "note": "Final selections 57787093 (exp095) and 57646082 (exp096) confirmed via SDK on 2026-11-02. This bundle corresponds to 57787093, sophie555/arc2-exp095-qwen-force v1. Local kernel bytes match the saved snapshot; scored server-side bytes have not been independently retrieved and compared.",
+    "selection_confirmed_date": "2026-11-02",
+    "selection_confirmation_method": "Kaggle SDK"
+  },
+  "publication_source_notices": {
+    "arc_decoder.py": "# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.\n# Skip unreadable or incomplete compressed candidate files. See ../NOTICE for details.\n",
+    "arc_solver.py": "# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.\n# Resolve Kaggle mounts, trace tasks, batch/cache generation views, and rescore four views.\n# See ../NOTICE for details.\n",
+    "starter.py": "# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.\n# Resolve Kaggle mounts and bound worker waits/cleanup by deadlines. See ../NOTICE for details.\n"
+  },
+  "publication_source_note": "Only these exact leading notices are removed for original payload verification/rebuild. members and src/manifest.json describe the unchanged submitted payload bytes, before publication notices."
 }

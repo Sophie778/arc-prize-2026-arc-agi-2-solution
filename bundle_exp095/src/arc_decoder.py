@@ -1,3 +1,5 @@
+# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.
+# Skip unreadable or incomplete compressed candidate files. See ../NOTICE for details.
 import os
 import bz2
 import pickle

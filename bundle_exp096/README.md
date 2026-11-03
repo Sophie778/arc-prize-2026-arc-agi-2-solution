@@ -1,7 +1,6 @@
 # ARC-AGI-2 2026 — exp096 (publication draft)
 
-**Publication hold:** this is a review copy prepared offline. Resolve the items
-in `PUBLICATION_HOLD.json` and obtain supervisor review before publication.
+This source bundle was prepared offline.
 The selected exp096 submission is 57646082. Planned publication is after 2026-11-02 23:59 UTC
 and by 2026-11-09 23:59 UTC; no public upload is performed by this bundle.
 
@@ -132,7 +131,12 @@ their individual License fields were not verified. The ARC Prize Foundation
 system prompt is MIT, with its copyright and full permission notice in
 licenses/MIT-ARC-Prize-Foundation.txt. Complete Apache-2.0 terms are attached;
 NOTICE identifies our three modified NVARC files and retains attribution.
-Source and submitted kernel bytes have been preserved.
+Modification notices were added to `src/arc_decoder.py`, `src/arc_solver.py`, and
+`src/starter.py`. The embedded payload in `notebook/kernel.py` remains byte-for-byte
+identical to the scored submission snapshot. The scored server-side bytes have not
+been independently retrieved and compared. `rebuild.py` removes only these exact
+leading notices before checking original member hashes and rebuilding the payload.
+`src/manifest.json` and provenance member hashes describe the original payload bytes.
 
 The mikedan7 Kaggle Model hf-fp8 version 1 is Apache-2.0. Distribution licenses
 alone do not resolve OSAID training-system compliance. Model weights and wheels
@@ -151,7 +155,8 @@ Do not publish generated challenge copies, records, submissions or caches.
 |---|---|---|---|---|
 | 57646082 | Qwen-led / exp096 | `sophie555/arc2-exp096-qwen-main` v1 | `0c00938e7de3e068bc11ebbe72a7a7e6c1081b090f6e19f453182d461ea05730` | Both unverified (未確認) |
 
-The local experiment ledger records the selected submission and Notebook version.
+The final two selections, 57787093 (exp095) and 57646082 (exp096), were
+confirmed via the SDK on 2026-11-02. The local record supplies the Notebook version.
 The SHA-256 above was computed from the local development kernel.py and matches
 this bundle's notebook/kernel.py byte for byte. The scored server-side kernel
 bytes have not been independently retrieved and compared. The attached outputs

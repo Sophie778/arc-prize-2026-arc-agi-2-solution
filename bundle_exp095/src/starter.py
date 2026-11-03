@@ -1,3 +1,5 @@
+# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.
+# Resolve Kaggle mounts and bound worker waits/cleanup by deadlines. See ../NOTICE for details.
 import os
 
 # NOTE (fork, 2026-08-19): Kaggle has been flip-flopping the competition data

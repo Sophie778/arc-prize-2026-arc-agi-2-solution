@@ -1,3 +1,6 @@
+# Modified by Daiki / sophie555, 2026-11-03 (publication notice); derived from NVARC.
+# Resolve Kaggle mounts, trace tasks, batch/cache generation views, and rescore four views.
+# See ../NOTICE for details.
 from unsloth import FastLanguageModel, UnslothTrainingArguments, UnslothTrainer
 from arc_loader import ArcDataset, QwenFormatter
 

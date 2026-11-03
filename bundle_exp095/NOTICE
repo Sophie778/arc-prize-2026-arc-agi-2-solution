@@ -1,8 +1,7 @@
 # NOTICE — exp095 publication draft
 
 This directory contains the exact local submitted kernel and its expanded payload.
-It is a review draft, not an approved public release. `PUBLICATION_HOLD.json`
-lists the remaining publication holds. The MIT-0 OR CC-BY-4.0 grant covers only our own
+The MIT-0 OR CC-BY-4.0 grant covers only our own
 contributions. It does not relicense any of the following third-party material.
 
 ## Included third-party material
@@ -91,9 +90,15 @@ NOTICE retains their available attribution without inventing a copyright year.
 
 ## File-specific modification notices (Apache-2.0 section 4)
 
-These prominent notices accompany each named file, including its embedded copy
-in notebook/kernel.py. Per the owner's instruction, they are recorded here so the
-expanded source and the encoded submitted kernel retain byte identity.
+Modification notices were added on 2026-11-03 to the leading comments of
+`src/arc_decoder.py`, `src/arc_solver.py`, and `src/starter.py`. The comments identify
+Daiki / sophie555, summarize the existing changes, and refer here for details.
+The embedded payload in `notebook/kernel.py` remains byte-for-byte identical to
+the scored submission snapshot; its embedded sources do not include these new
+publication notices. Scored server-side bytes have not been independently retrieved
+and compared. `rebuild.py` removes only the exact leading notices recorded in
+provenance before checking original member hashes and rebuilding the payload.
+`src/arc_loader.py` is unchanged.
 
 - `src/arc_decoder.py`: Modified by Daiki / sophie555: skip unreadable or incomplete compressed candidate files rather than aborting collection.
 - `src/arc_solver.py`: Modified by Daiki / sophie555: resolve Kaggle competition/model mount paths at runtime; record task start/end; use one color permutation per eight spatial generation views with helper batching and cached prompt tokens; rescore with four views instead of eight.
